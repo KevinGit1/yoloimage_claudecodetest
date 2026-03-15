@@ -1,0 +1,16 @@
+[project]
+name = "vehicle-person-detection"
+version = "0.1.0"
+description = "Vehicle and person detection system using YOLOv8"
+requires-python = ">=3.10"
+dependencies = [
+    "ultralytics",
+    "opencv-python",
+    "pyyaml",
+    "pillow",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest",
+]
