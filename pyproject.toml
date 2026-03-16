@@ -1,0 +1,18 @@
+[project]
+name = "streetwatch"
+version = "0.1.0"
+description = "Detect persons and cars in images using ultralytics YOLOv8"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "loguru>=0.7.3",
+    "opencv-python-headless>=4.13.0.92",
+    "pillow>=12.1.1",
+    "ultralytics>=8.4.22",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+    "ruff>=0.15.6",
+]
