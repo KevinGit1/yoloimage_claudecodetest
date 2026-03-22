@@ -11,8 +11,24 @@ dependencies = [
     "ultralytics>=8.4.22",
 ]
 
+[project.scripts]
+streetwatch = "streetwatch.cli:main"
+
+[build-system]
+requires = ["setuptools>=75.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
 [dependency-groups]
 dev = [
     "pytest>=9.0.2",
     "ruff>=0.15.6",
 ]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+src = ["src"]
