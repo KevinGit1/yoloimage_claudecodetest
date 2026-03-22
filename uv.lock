@@ -796,7 +796,7 @@ wheels = [
 [[package]]
 name = "streetwatch"
 version = "0.1.0"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
     { name = "loguru" },
     { name = "opencv-python-headless" },
